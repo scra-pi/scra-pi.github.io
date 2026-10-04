@@ -12,6 +12,7 @@ O site é publicado pelo GitHub Pages. Cada alteração enviada para o ramo `mai
 | --- | --- |
 | `index.html` | Página inicial (com o slider) |
 | `sobre.html`, `formacao.html`, `financiamento.html`, `noticias.html` | Restantes páginas |
+| `aviso-legal.html` | Direitos de autor, privacidade e cookies (ligada no rodapé) |
 | `404.html` | Página mostrada quando um endereço não existe |
 | `style.css` | Cores, tamanhos e aspeto em telemóvel |
 | `script.js` | Menu do telemóvel e slider |
@@ -26,4 +27,4 @@ O site é publicado pelo GitHub Pages. Cada alteração enviada para o ramo `mai
 - **Contactos e menu:** estão repetidos em todas as páginas, por isso têm de ser alterados nos 6 ficheiros `.html`.
 - **Nova imagem no slider:** guardar a imagem com 2400×699 píxeis e acrescentar uma linha `<img>` dentro de `<div class="slider">` no `index.html`. Os pontos do slider são criados sozinhos.
 - **Link da plataforma da formação:** no `formacao.html` há um bloco comentado (`<!-- ... -->`). Basta pôr o link no lugar de `COLOCAR-O-LINK-AQUI` e apagar as marcas de comentário.
-- **Depois de alterar o `style.css` ou o `script.js`:** aumentar o número em `style.css?v=4` / `script.js?v=4` em todas as páginas (por exemplo para `v=5`). Assim os visitantes recebem logo a versão nova, em vez da que o navegador guardou.
+- **Depois de alterar o `style.css` ou o `script.js`:** aumentar o número em `style.css?v=5` / `script.js?v=5` em todas as páginas (por exemplo para `v=6`). Assim os visitantes recebem logo a versão nova, em vez da que o navegador guardou.
