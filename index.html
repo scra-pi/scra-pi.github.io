@@ -1,9 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCRAπ</title>
+    <title>Scraπ: Scratch e Matemática do 2.º ciclo do Ensino Básico</title>
+    <meta name="description" content="Comunidade de aprendizagem online que junta o Scratch, a Matemática do 2.º ciclo e a colaboração entre professores para promover o Pensamento Computacional dos alunos.">
+    <link rel="canonical" href="https://scra-pi.github.io/">
+
+    <!-- pré-visualização quando o link é partilhado (WhatsApp, Facebook, LinkedIn...) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Scraπ">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:title" content="Scraπ: Scratch e Matemática do 2.º ciclo do Ensino Básico">
+    <meta property="og:description" content="Comunidade de aprendizagem online que junta o Scratch, a Matemática do 2.º ciclo e a colaboração entre professores para promover o Pensamento Computacional dos alunos.">
+    <meta property="og:url" content="https://scra-pi.github.io/">
+    <meta property="og:image" content="https://scra-pi.github.io/partilha.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="favicon-32.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -11,36 +26,42 @@
 </head>
 
 <body>
+    <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+
     <header>
-    <div class="logo">
-        <img src="logo1.png" alt="Logo Scraπ">
-    </div>
+        <a class="logo" href="index.html">
+            <img src="logo1.png" width="160" height="70" alt="Scraπ: página inicial">
+        </a>
 
-    <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+        <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-    <nav>
-        <a href="index.html" class="active">Scraπ</a>
+        <nav id="menu" aria-label="Menu principal">
+        <a href="index.html" class="active" aria-current="page">Scraπ</a>
         <a href="sobre.html">Sobre o projeto</a>
         <a href="formacao.html">A formação</a>
         <a href="financiamento.html">Financiamento</a>
         <a href="noticias.html">Notícias</a>
-    </nav>
-</header>
+        </nav>
+    </header>
 
-    <main>
-        <section class="images-area">
+    <main id="conteudo">
+        <section class="images-area" aria-roledescription="carrossel" aria-label="Destaques">
             <button class="prev" aria-label="Imagem anterior">&#10094;</button>
 
             <div class="slider">
-                <img src="imagem1.png" class="active" alt="Professores trabalhando com Scratch e Matemática" loading="lazy">
-                <img src="imagem2.png" alt="Alunos programando atividades matemáticas no Scratch" loading="lazy">
+                <img src="imagem1.webp" class="active" width="2400" height="699" fetchpriority="high"
+                     alt="Scraπ: comunidade de aprendizagem online do Scratch e colaboração entre professores de Matemática do 2.º ciclo do Ensino Básico">
+                <img src="imagem2.webp" width="2400" height="699" loading="lazy"
+                     alt="Projeto financiado pela Fundação para a Ciência e a Tecnologia (FCT)">
             </div>
 
             <button class="next" aria-label="Próxima imagem">&#10095;</button>
+
+            <div class="dots"></div>
         </section>
 
         <section class="conteudo">
@@ -56,29 +77,29 @@
 
             <div class="contact">
                 <a href="mailto:a.beatriz.matos2@gmail.com">
-                    <img src="email.png" alt="Email" class="icon3">
+                    <img src="email.png" alt="" class="icon" width="60" height="53">
                     a.beatriz.matos2@gmail.com
                 </a>
             </div>
 
             <div class="contact">
                 <a href="https://www.instagram.com/scrapi.pt" target="_blank" rel="noopener">
-                    <img src="instagram.png" alt="Instagram Scraπ" class="icon2">
-                    @scrapi.pt
+                    <img src="instagram.png" alt="" class="icon" width="60" height="53">
+                    Instagram: @scrapi.pt
                 </a>
             </div>
 
             <div class="contact">
                 <a href="https://scratch.mit.edu/studios/50838142/" target="_blank" rel="noopener">
-                    <img src="logo.png" alt="Estúdio Scraπ no Scratch" class="icon">
-                    Estúdio Scraπ
+                    <img src="logo.png" alt="" class="icon" width="60" height="53">
+                    Estúdio Scraπ no Scratch
                 </a>
             </div>
         </section>
     </main>
 
     <footer>
-        Copyright © Todos os direitos reservados para Scraπ. 
+        © <span id="ano">2026</span> Scraπ. Todos os direitos reservados.
     </footer>
 
     <script src="script.js"></script>
