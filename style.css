@@ -36,22 +36,6 @@ height:70px; /* mais pequeno */
 width:auto;
 }
 
-/* LINK "SALTAR PARA O CONTEÚDO" (só aparece com o teclado) */
-.saltar{
-position:absolute;
-left:-9999px;
-top:10px;
-z-index:10;
-background:#2c7cc4;
-color:white;
-padding:10px 16px;
-border-radius:10px;
-}
-
-.saltar:focus{
-left:10px;
-}
-
 /* CONTORNO VISÍVEL AO NAVEGAR COM O TECLADO */
 a:focus-visible,
 button:focus-visible{
