@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A formação | Scraπ</title>
     <meta name="description" content="Formação contínua acreditada (26 horas, 1 ECTS): aprendizagem e ensino da Matemática com o Scratch no 2.º Ciclo do Ensino Básico.">
+    <meta name="theme-color" content="#2c7cc4">
     <link rel="canonical" href="https://scra-pi.github.io/formacao.html">
 
     <!-- pré-visualização quando o link é partilhado (WhatsApp, Facebook, LinkedIn...) -->
@@ -22,95 +23,143 @@
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="favicon-32.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=7">
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="index.html">
-            <img src="logo1.png" width="160" height="70" alt="Scraπ: página inicial">
-        </a>
+    <header class="topo">
+        <div class="topo-interior">
+            <a class="logo" href="index.html">
+                <img src="logo1.png" width="160" height="70" alt="Scraπ: página inicial">
+            </a>
 
-        <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <nav id="menu" aria-label="Menu principal">
-        <a href="index.html">Scraπ</a>
-        <a href="sobre.html">Sobre o projeto</a>
-        <a href="formacao.html" class="active" aria-current="page">A formação</a>
-        <a href="financiamento.html">Financiamento</a>
-        <a href="noticias.html">Notícias</a>
-        </nav>
+            <nav id="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre o projeto</a>
+            <a href="formacao.html" class="active" aria-current="page">A formação</a>
+            <a href="financiamento.html">Financiamento</a>
+            <a href="noticias.html">Notícias</a>
+            </nav>
+        </div>
     </header>
 
     <main id="conteudo">
-        <section class="conteudo">
-            <h1>A formação</h1>
-
-            <p>
-                A formação Scraπ: Aprendizagem e ensino da Matemática com o Scratch no 2.º Ciclo do Ensino Básico é um programa de formação contínua acreditado com a duração de 26 horas (1 ECTS).
-            </p>
-
-            <p>
-                Objetivos:
-            </p>
-
-            <ul>
-                <li>Promover competências digitais e de raciocínio em professores;</li>
-                <li>Utilizar Scratch e OctoStudio no ensino da Matemática;</li>
-                <li>Colaborar na criação de atividades educativas;</li>
-                <li>Planear propostas pedagógicas integrando pensamento computacional.</li>
-            </ul>
-
-            <p class="centro">
-                <a class="botao" href="https://formacao.uab.pt/candidaturas/curso/8325/166" target="_blank" rel="noopener">Inscrições na Universidade Aberta</a>
-            </p>
-
-            <!-- Falta o link: quando existir, apagar estas marcas de comentário
-            <p>
-                Plataforma da formação: <a href="COLOCAR-O-LINK-AQUI" target="_blank" rel="noopener">COLOCAR-O-LINK-AQUI</a>
-            </p>
-            -->
+        <section class="faixa">
+            <div class="interior">
+            <p class="etiqueta">Formação contínua acreditada</p>
+                <h1>A formação</h1>
+                <p class="subtitulo">Scraπ: Aprendizagem e ensino da Matemática com o Scratch no 2.º Ciclo do Ensino Básico.</p>
+            </div>
         </section>
 
-        <section class="contactos">
-            <h2>Contactos</h2>
-
-            <div class="contact">
-                <a href="mailto:a.beatriz.matos2@gmail.com">
-                    <img src="email.png" alt="" class="icon" width="60" height="53">
-                    a.beatriz.matos2@gmail.com
-                </a>
+        <section class="seccao">
+            <div class="interior">
+                <div class="grelha grelha-4 factos">
+                    <div class="facto aparecer">
+                        <span class="cartao-icone"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+                        <strong>26 horas</strong>
+                        <span>de formação</span>
+                    </div>
+                    <div class="facto aparecer">
+                        <span class="cartao-icone laranja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M7 10.5V15c0 1.5 2.2 3 5 3s5-1.5 5-3v-4.5"/></svg></span>
+                        <strong>1 ECTS</strong>
+                        <span>crédito europeu</span>
+                    </div>
+                    <div class="facto aparecer">
+                        <span class="cartao-icone"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14l-1.5 7 5-3 5 3-1.5-7"/></svg></span>
+                        <strong>Acreditada</strong>
+                        <span>formação contínua</span>
+                    </div>
+                    <div class="facto aparecer">
+                        <span class="cartao-icone laranja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+                        <strong>13 abr – 5 jun</strong>
+                        <span>primeira edição</span>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="contact">
-                <a href="https://www.instagram.com/scrapi.pt" target="_blank" rel="noopener">
-                    <img src="instagram.png" alt="" class="icon" width="60" height="53">
-                    Instagram: @scrapi.pt
-                </a>
-            </div>
+        <section class="seccao seccao-clara">
+            <div class="interior com-lateral">
+                <article class="texto">
+                    <p class="destaque-texto">
+                        A formação Scraπ: Aprendizagem e ensino da Matemática com o Scratch no 2.º Ciclo do Ensino Básico é um programa de formação contínua acreditado com a duração de 26 horas (1 ECTS).
+                    </p>
 
-            <div class="contact">
-                <a href="https://scratch.mit.edu/studios/50838142/" target="_blank" rel="noopener">
-                    <img src="logo.png" alt="" class="icon" width="60" height="53">
-                    Estúdio Scraπ no Scratch
-                </a>
+                    <h2>Objetivos</h2>
+
+                    <ul class="lista-visto">
+                        <li><svg class="ico visto" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Promover competências digitais e de raciocínio em professores;</li>
+                        <li><svg class="ico visto" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Utilizar Scratch e OctoStudio no ensino da Matemática;</li>
+                        <li><svg class="ico visto" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Colaborar na criação de atividades educativas;</li>
+                        <li><svg class="ico visto" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Planear propostas pedagógicas integrando pensamento computacional.</li>
+                    </ul>
+
+                    <!-- Falta o link: quando existir, apagar estas marcas de comentário
+                    <p>
+                        Plataforma da formação: <a href="COLOCAR-O-LINK-AQUI" target="_blank" rel="noopener">COLOCAR-O-LINK-AQUI</a>
+                    </p>
+                    -->
+                </article>
+
+                <aside class="lateral">
+                    <div class="cartao cartao-inscricao aparecer">
+                        <h3>Inscrições</h3>
+                        <p>As inscrições são feitas na plataforma da Universidade Aberta.</p>
+                        <a class="botao botao-laranja botao-bloco" href="https://formacao.uab.pt/candidaturas/curso/8325/166" target="_blank" rel="noopener">Inscrever-me <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </div>
+                </aside>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© <span id="ano">2026</span> Scraπ. Todos os direitos reservados.</p>
-        <p class="links-legais">
-            <a href="aviso-legal.html#direitos">Direitos de autor</a>
-            <a href="aviso-legal.html#privacidade">Privacidade e cookies</a>
-            <button type="button" class="gerir-cookies">Gerir cookies</button>
-        </p>
+    <footer class="rodape">
+        <div class="rodape-interior">
+            <div class="rodape-marca">
+                <img src="logo1.png" width="160" height="70" alt="Scraπ">
+                <p>Scratch e Matemática no 2.º ciclo do Ensino Básico: uma comunidade de aprendizagem online de professores.</p>
+                <p class="rodape-fct">Projeto financiado pela Fundação para a Ciência e a Tecnologia.</p>
+            </div>
+
+            <div>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o projeto</a></li>
+                    <li><a href="formacao.html">A formação</a></li>
+                    <li><a href="financiamento.html">Financiamento</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contactos</h2>
+                <ul>
+                    <li><a href="mailto:a.beatriz.matos2@gmail.com">a.beatriz.matos2@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/scrapi.pt" target="_blank" rel="noopener">Instagram @scrapi.pt</a></li>
+                    <li><a href="https://scratch.mit.edu/studios/50838142/" target="_blank" rel="noopener">Estúdio Scraπ no Scratch</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape-base">
+            <p>© <span id="ano">2026</span> Scraπ. Todos os direitos reservados.</p>
+            <p class="links-legais">
+                <a href="aviso-legal.html#direitos">Direitos de autor</a>
+                <a href="aviso-legal.html#privacidade">Privacidade e cookies</a>
+                <button type="button" class="gerir-cookies">Gerir cookies</button>
+            </p>
+        </div>
     </footer>
 
-    <script src="script.js?v=6"></script>
+    <button type="button" class="voltar-topo" aria-label="Voltar ao topo"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+
+    <script src="script.js?v=7"></script>
 </body>
 </html>

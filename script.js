@@ -81,6 +81,42 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // sombra no cabeçalho e botão "voltar ao topo" quando se desce na página
+    let topo = document.querySelector(".topo");
+    let voltarTopo = document.querySelector(".voltar-topo");
+
+    function aoDeslizar() {
+        let y = window.scrollY;
+        if (topo) topo.classList.toggle("com-sombra", y > 10);
+        if (voltarTopo) voltarTopo.classList.toggle("visivel", y > 600);
+    }
+
+    window.addEventListener("scroll", aoDeslizar, { passive: true });
+    aoDeslizar();
+
+    if (voltarTopo) {
+        voltarTopo.addEventListener("click", function() {
+            window.scrollTo({ top: 0 });
+        });
+    }
+
+    // cartões aparecem suavemente ao chegar ao ecrã
+    let menosMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let elementos = document.querySelectorAll(".aparecer");
+
+    if (!menosMovimento && "IntersectionObserver" in window && elementos.length) {
+        document.body.classList.add("animar");
+        let observador = new IntersectionObserver(function(entradas) {
+            entradas.forEach(function(entrada) {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add("visivel");
+                    observador.unobserve(entrada.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        elementos.forEach(el => observador.observe(el));
+    }
+
     // slider (só existe na página inicial)
     let area = document.querySelector(".images-area");
     let imagens = document.querySelectorAll(".slider img");

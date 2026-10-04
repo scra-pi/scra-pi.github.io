@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre o projeto | Scraπ</title>
     <meta name="description" content="Conheça o Scraπ, projeto de doutoramento que alia o Scratch à Matemática do 2.º ciclo do Ensino Básico através de uma comunidade de aprendizagem online de professores.">
+    <meta name="theme-color" content="#2c7cc4">
     <link rel="canonical" href="https://scra-pi.github.io/sobre.html">
 
     <!-- pré-visualização quando o link é partilhado (WhatsApp, Facebook, LinkedIn...) -->
@@ -22,86 +23,118 @@
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="favicon-32.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=7">
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="index.html">
-            <img src="logo1.png" width="160" height="70" alt="Scraπ: página inicial">
-        </a>
+    <header class="topo">
+        <div class="topo-interior">
+            <a class="logo" href="index.html">
+                <img src="logo1.png" width="160" height="70" alt="Scraπ: página inicial">
+            </a>
 
-        <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <nav id="menu" aria-label="Menu principal">
-        <a href="index.html">Scraπ</a>
-        <a href="sobre.html" class="active" aria-current="page">Sobre o projeto</a>
-        <a href="formacao.html">A formação</a>
-        <a href="financiamento.html">Financiamento</a>
-        <a href="noticias.html">Notícias</a>
-        </nav>
+            <nav id="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="sobre.html" class="active" aria-current="page">Sobre o projeto</a>
+            <a href="formacao.html">A formação</a>
+            <a href="financiamento.html">Financiamento</a>
+            <a href="noticias.html">Notícias</a>
+            </nav>
+        </div>
     </header>
 
     <main id="conteudo">
-        <section class="conteudo">
-            <h1>Sobre o projeto</h1>
-
-            <p>
-                O presente projeto procura aliar a aprendizagem da linguagem de programação em blocos de cores, Scratch, com a disciplina de Matemática do 2.º ciclo do Ensino Básico português e a colaboração de professores da área para a promoção do Pensamento Computacional dos alunos.
-            </p>
-
-            <p>
-                A sociedade em rede coloca desafios profissionais aos professores, posicionando-os num processo reflexivo e com necessidades formativas para a construção, juntamente com os alunos, de inúmeras aprendizagens.
-            </p>
-
-            <p>
-                Reconhecendo potencialidades na colaboração docente e na utilização do Scratch na área da Matemática e na promoção do Pensamento Computacional, torna-se relevante perceber quais os contributos de uma Comunidade de Aprendizagem Online.
-            </p>
-
-            <p>
-                O projeto é financiado pela Fundação para a Ciência e a Tecnologia (2024.03127.BD), no âmbito do doutoramento em Educação a Distância e E-Learning.
-            </p>
+        <section class="faixa">
+            <div class="interior">
+            <p class="etiqueta">O Scraπ</p>
+                <h1>Sobre o projeto</h1>
+                <p class="subtitulo">Uma comunidade de aprendizagem online de professores de Matemática.</p>
+            </div>
         </section>
 
-        <section class="contactos">
-            <h2>Contactos</h2>
+        <section class="seccao">
+            <div class="interior com-lateral">
+                <article class="texto">
+                    <p class="destaque-texto">
+                        O presente projeto procura aliar a aprendizagem da linguagem de programação em blocos de cores, Scratch, com a disciplina de Matemática do 2.º ciclo do Ensino Básico português e a colaboração de professores da área para a promoção do Pensamento Computacional dos alunos.
+                    </p>
 
-            <div class="contact">
-                <a href="mailto:a.beatriz.matos2@gmail.com">
-                    <img src="email.png" alt="" class="icon" width="60" height="53">
-                    a.beatriz.matos2@gmail.com
-                </a>
-            </div>
+                    <p>
+                        A sociedade em rede coloca desafios profissionais aos professores, posicionando-os num processo reflexivo e com necessidades formativas para a construção, juntamente com os alunos, de inúmeras aprendizagens.
+                    </p>
 
-            <div class="contact">
-                <a href="https://www.instagram.com/scrapi.pt" target="_blank" rel="noopener">
-                    <img src="instagram.png" alt="" class="icon" width="60" height="53">
-                    Instagram: @scrapi.pt
-                </a>
-            </div>
+                    <blockquote>
+                        Reconhecendo potencialidades na colaboração docente e na utilização do Scratch na área da Matemática e na promoção do Pensamento Computacional, torna-se relevante perceber quais os contributos de uma Comunidade de Aprendizagem Online.
+                    </blockquote>
 
-            <div class="contact">
-                <a href="https://scratch.mit.edu/studios/50838142/" target="_blank" rel="noopener">
-                    <img src="logo.png" alt="" class="icon" width="60" height="53">
-                    Estúdio Scraπ no Scratch
-                </a>
+                    <p>
+                        O projeto é financiado pela Fundação para a Ciência e a Tecnologia (2024.03127.BD), no âmbito do doutoramento em Educação a Distância e E-Learning.
+                    </p>
+                </article>
+
+                <aside class="lateral">
+                    <div class="cartao aparecer">
+                        <h3>Em resumo</h3>
+                        <ul class="lista-visto">
+                            <li><svg class="ico visto" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Scratch no ensino da Matemática</li>
+                            <li><svg class="ico visto" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> 2.º ciclo do Ensino Básico</li>
+                            <li><svg class="ico visto" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Colaboração entre professores</li>
+                            <li><svg class="ico visto" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg> Doutoramento em Educação a Distância e E-Learning</li>
+                        </ul>
+                        <a class="botao botao-bloco" href="formacao.html">Ver a formação <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </div>
+                </aside>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© <span id="ano">2026</span> Scraπ. Todos os direitos reservados.</p>
-        <p class="links-legais">
-            <a href="aviso-legal.html#direitos">Direitos de autor</a>
-            <a href="aviso-legal.html#privacidade">Privacidade e cookies</a>
-            <button type="button" class="gerir-cookies">Gerir cookies</button>
-        </p>
+    <footer class="rodape">
+        <div class="rodape-interior">
+            <div class="rodape-marca">
+                <img src="logo1.png" width="160" height="70" alt="Scraπ">
+                <p>Scratch e Matemática no 2.º ciclo do Ensino Básico: uma comunidade de aprendizagem online de professores.</p>
+                <p class="rodape-fct">Projeto financiado pela Fundação para a Ciência e a Tecnologia.</p>
+            </div>
+
+            <div>
+                <h2>Navegação</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o projeto</a></li>
+                    <li><a href="formacao.html">A formação</a></li>
+                    <li><a href="financiamento.html">Financiamento</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contactos</h2>
+                <ul>
+                    <li><a href="mailto:a.beatriz.matos2@gmail.com">a.beatriz.matos2@gmail.com</a></li>
+                    <li><a href="https://www.instagram.com/scrapi.pt" target="_blank" rel="noopener">Instagram @scrapi.pt</a></li>
+                    <li><a href="https://scratch.mit.edu/studios/50838142/" target="_blank" rel="noopener">Estúdio Scraπ no Scratch</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape-base">
+            <p>© <span id="ano">2026</span> Scraπ. Todos os direitos reservados.</p>
+            <p class="links-legais">
+                <a href="aviso-legal.html#direitos">Direitos de autor</a>
+                <a href="aviso-legal.html#privacidade">Privacidade e cookies</a>
+                <button type="button" class="gerir-cookies">Gerir cookies</button>
+            </p>
+        </div>
     </footer>
 
-    <script src="script.js?v=6"></script>
+    <button type="button" class="voltar-topo" aria-label="Voltar ao topo"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+
+    <script src="script.js?v=7"></script>
 </body>
 </html>
