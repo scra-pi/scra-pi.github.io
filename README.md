@@ -10,22 +10,24 @@ O site é publicado pelo GitHub Pages. Cada alteração enviada para o ramo `mai
 
 | Ficheiro | O que é |
 | --- | --- |
-| `index.html` | Página inicial (com o slider) |
+| `index.html` | Página inicial |
 | `sobre.html`, `formacao.html`, `financiamento.html`, `noticias.html` | Restantes páginas |
 | `aviso-legal.html` | Direitos de autor, privacidade e cookies (ligada no rodapé) |
 | `404.html` | Página mostrada quando um endereço não existe |
 | `style.css` | Cores, tamanhos e aspeto em telemóvel |
-| `script.js` | Menu do telemóvel e slider |
-| `imagem1.webp`, `imagem2.webp` | Banners do slider (2400×699) |
+| `script.js` | Menu do telemóvel, aviso de cookies e animações |
+| `imagem1.webp`, `imagem2.webp` | Banners do projeto e da FCT (2400×699); o da FCT aparece no Financiamento |
+| `blocos-scratch.webp` | Imagem dos blocos do Scratch na apresentação da página inicial |
+| `logo1.png`, `logo-branco.png` | Logótipo (cabeçalho) e versão branca (rodapé) |
+| `fontes/` | Letras Inter e Plus Jakarta Sans (licença SIL OFL), alojadas no site |
 | `partilha.jpg` | Imagem que aparece quando o link é partilhado (1200×630) |
 | `favicon.ico`, `favicon-32.png`, `apple-touch-icon.png` | Ícone do separador do navegador |
 | `sitemap.xml`, `robots.txt` | Ajudam o Google a encontrar as páginas |
 
 ## Alterações frequentes
 
-- **Texto de uma página:** editar o que está dentro de `<section class="conteudo">` no ficheiro dessa página.
-- **Contactos e menu:** estão repetidos em todas as páginas, por isso têm de ser alterados nos 6 ficheiros `.html`.
-- **Nova imagem no slider:** guardar a imagem com 2400×699 píxeis e acrescentar uma linha `<img>` dentro de `<div class="slider">` no `index.html`. Os pontos do slider são criados sozinhos.
+- **Texto de uma página:** editar o texto dentro de `<main>` no ficheiro dessa página.
+- **Contactos, menu e rodapé:** estão repetidos em todas as páginas, por isso têm de ser alterados nos 7 ficheiros `.html`.
 - **Link da plataforma da formação:** no `formacao.html` há um bloco comentado (`<!-- ... -->`). Basta pôr o link no lugar de `COLOCAR-O-LINK-AQUI` e apagar as marcas de comentário.
-- **Depois de alterar o `style.css` ou o `script.js`:** aumentar o número em `style.css?v=6` / `script.js?v=6` em todas as páginas (por exemplo para `v=7`). Assim os visitantes recebem logo a versão nova, em vez da que o navegador guardou.
+- **Depois de alterar o `style.css` ou o `script.js`:** aumentar o número em `style.css?v=8` / `script.js?v=8` em todas as páginas (por exemplo para `v=9`). Assim os visitantes recebem logo a versão nova, em vez da que o navegador guardou.
 - **Aviso de cookies:** é criado pelo `script.js`. A escolha do visitante fica em `localStorage` (`scrapi-cookies`: `aceite` ou `recusado`). Se um dia for acrescentado Google Analytics ou outro serviço com cookies, só deve ser carregado quando a escolha for `aceite`, usando a função `cookiesAceites()`.
