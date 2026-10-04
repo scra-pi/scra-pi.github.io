@@ -291,6 +291,106 @@ color:white;
 margin:0 10px;
 }
 
+.gerir-cookies{
+background:none;
+border:none;
+padding:0;
+margin:0 10px;
+font:inherit;
+color:white;
+text-decoration:underline;
+cursor:pointer;
+}
+
+/* AVISO DE COOKIES */
+.aviso-cookies{
+position:fixed;
+left:20px;
+right:20px;
+bottom:20px;
+z-index:100;
+max-width:760px;
+margin:0 auto;
+padding:24px 28px;
+background:white;
+color:#1f2a37;
+border-top:6px solid #FF540C;
+border-radius:20px;
+box-shadow:0 10px 40px rgba(0,0,0,0.25);
+font-size:16px;
+}
+
+.aviso-cookies h2{
+text-align:left;
+font-size:22px;
+margin:0 0 10px;
+color:#2c7cc4;
+}
+
+.aviso-cookies h2::after{
+display:none;
+}
+
+.aviso-cookies p{
+margin:0 0 18px;
+}
+
+.aviso-cookies a{
+color:#1a5f9e;
+}
+
+.aviso-cookies-botoes{
+display:flex;
+gap:12px;
+justify-content:flex-end;
+flex-wrap:wrap;
+}
+
+/* os dois botões com o mesmo destaque, como exige a CNPD */
+.aviso-cookies-botoes button{
+min-width:140px;
+padding:12px 24px;
+font:inherit;
+font-weight:bold;
+border-radius:30px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.cookies-recusar{
+background:white;
+color:#2c7cc4;
+border:2px solid #2c7cc4;
+}
+
+.cookies-aceitar{
+background:#2c7cc4;
+color:white;
+border:2px solid #2c7cc4;
+}
+
+.cookies-recusar:hover,
+.cookies-aceitar:hover{
+background:#FF540C;
+border-color:#FF540C;
+color:white;
+}
+
+@media (max-width:600px){
+.aviso-cookies{
+left:10px;
+right:10px;
+bottom:10px;
+padding:18px;
+font-size:15px;
+}
+
+.aviso-cookies-botoes button{
+flex:1;
+min-width:0;
+}
+}
+
 /* PÁGINA DO AVISO LEGAL */
 .legal h2{
 text-align:left;
