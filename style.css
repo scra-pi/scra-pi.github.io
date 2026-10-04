@@ -258,13 +258,15 @@ margin-left:0;
 text-align:center;
 }
 
+/* banner inteiro, sem cortar o texto (as imagens são 4272x1244) */
 .slider{
-height:220px;
+height:auto;
+aspect-ratio:4272 / 1244;
 }
 
 .images-area button{
-font-size:28px;
-padding:6px 10px;
+font-size:20px;
+padding:4px 8px;
 }
 
 .prev{ left:8px; }
