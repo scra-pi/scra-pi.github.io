@@ -9,31 +9,24 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="logo1.png" alt="Logo Scraπ">
-        </div>
+    <div class="logo">
+        <img src="logo1.png" alt="Logo Scraπ">
+    </div>
 
-		<div class="menu-toggle" id="mobile-menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-        <nav>
-            <a href="index.html" class="active">Scraπ</a>
-            <a href="sobre.html">Sobre o projeto</a>
-            <a href="formacao.html">A formação</a>
-            <a href="financiamento.html">Financiamento</a>
-            <a href="noticias.html">Notícias</a>
-        </nav>
-    </header>
-    <script>
-    const menuToggle = document.getElementById('mobile-menu');
-    const nav = document.querySelector('nav');
+    <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('show');
-    });
-    </script>
+    <nav>
+        <a href="index.html" class="active">Scraπ</a>
+        <a href="sobre.html">Sobre o projeto</a>
+        <a href="formacao.html">A formação</a>
+        <a href="financiamento.html">Financiamento</a>
+        <a href="noticias.html">Notícias</a>
+    </nav>
+</header>
 
     <main>
         <section class="images-area">
@@ -74,7 +67,7 @@
 
             <div class="contact">
                 <a href="https://scratch.mit.edu/studios/50838142/" target="_blank" rel="noopener">
-                    <img src="logo.png" alt="Website oficial Scraπ" class="icon">
+                    <img src="logo.png" alt="Estúdio Scraπ no Scratch" class="icon">
                     Estúdio Scraπ
                 </a>
             </div>

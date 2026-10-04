@@ -1,6 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+    // menu do telemóvel
+    let menuToggle = document.getElementById("mobile-menu");
+    let nav = document.querySelector("nav");
+
+    if (menuToggle && nav) {
+        menuToggle.addEventListener("click", function() {
+            let aberto = nav.classList.toggle("show");
+            menuToggle.setAttribute("aria-expanded", aberto);
+        });
+    }
+
+    // slider (só existe na página inicial)
     let imagens = document.querySelectorAll(".slider img");
+    if (imagens.length === 0) return;
+
     let index = 0;
 
     function mostrarImagem(i) {
