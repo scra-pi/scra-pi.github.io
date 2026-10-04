@@ -23,14 +23,16 @@
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" type="image/png" href="favicon-32.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="preload" href="fontes/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fontes/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style.css?v=8">
 </head>
 
 <body>
     <header class="topo">
         <div class="topo-interior">
             <a class="logo" href="index.html">
-                <img src="logo1.png" width="160" height="70" alt="Scraπ: página inicial">
+                <img src="logo1.png" width="488" height="210" alt="Scraπ: página inicial">
             </a>
 
             <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
@@ -50,31 +52,59 @@
     </header>
 
     <main id="conteudo">
-        <section class="images-area" aria-roledescription="carrossel" aria-label="Destaques">
-            <button class="prev" aria-label="Imagem anterior">&#10094;</button>
+        <section class="hero">
+            <div class="interior hero-grelha">
+                <div class="hero-texto">
+                    <p class="etiqueta">Comunidade de aprendizagem online</p>
+                    <h1>Scratch e Matemática no <span class="realce">2.º ciclo</span> do Ensino Básico</h1>
+                    <p class="hero-lead">
+                        Professores de Matemática a colaborar para promover o Pensamento Computacional dos alunos com o Scratch.
+                    </p>
+                    <div class="botoes">
+                        <a class="botao botao-laranja" href="sobre.html">Conhecer o projeto <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                        <a class="botao botao-secundario" href="formacao.html">Ver a formação</a>
+                    </div>
+                    <ul class="hero-dados">
+                        <li><strong>26 h</strong><span>formação acreditada</span></li>
+                        <li><strong>1 ECTS</strong><span>crédito europeu</span></li>
+                        <li><strong>FCT</strong><span>projeto financiado</span></li>
+                    </ul>
+                </div>
 
-            <div class="slider">
-                <img src="imagem1.webp" class="active" width="2400" height="699" fetchpriority="high"
-                     alt="Scraπ: comunidade de aprendizagem online do Scratch e colaboração entre professores de Matemática do 2.º ciclo do Ensino Básico">
-                <img src="imagem2.webp" width="2400" height="699" loading="lazy"
-                     alt="Projeto financiado pela Fundação para a Ciência e a Tecnologia (FCT)">
+                <div class="hero-visual">
+                    <figure class="janela">
+                        <div class="janela-barra" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <img src="blocos-scratch.webp" width="640" height="894" fetchpriority="high"
+                             alt="Programa no Scratch que pede duas frações ao aluno e calcula o seu produto">
+                    </figure>
+                    <div class="hero-selo" aria-hidden="true">
+                        <span class="hero-selo-icone">π</span>
+                        <span>Frações no Scratch</span>
+                    </div>
+                </div>
             </div>
-
-            <button class="next" aria-label="Próxima imagem">&#10095;</button>
-
-            <div class="dots"></div>
         </section>
 
-        <section class="seccao intro">
-            <div class="interior estreito centro">
-                <p class="etiqueta">Scratch · Matemática · 2.º ciclo</p>
-                <h1>O projeto</h1>
-                <p class="destaque-texto">
-                    O presente projeto procura aliar a aprendizagem da linguagem de programação em blocos de cores, <strong>Scratch</strong>, com a disciplina de <strong>Matemática</strong> do 2.º ciclo do Ensino Básico português e a colaboração de professores da área para a promoção do <strong>Pensamento Computacional</strong> dos alunos.
-                </p>
-                <div class="botoes">
-                    <a class="botao" href="sobre.html">Conhecer o projeto <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-                    <a class="botao botao-secundario" href="formacao.html">Ver a formação</a>
+        <section class="parceiros" aria-label="Instituições">
+            <div class="interior parceiros-lista">
+                <span class="parceiros-titulo">Financiado e apoiado por</span>
+                <span>Fundação para a Ciência e a Tecnologia</span>
+                <span>Universidade do Minho</span>
+                <span>Universidade Aberta</span>
+            </div>
+        </section>
+
+        <section class="seccao">
+            <div class="interior projeto">
+                <div>
+                    <p class="etiqueta">O projeto</p>
+                    <h2 class="titulo-grande">Programar para aprender Matemática</h2>
+                </div>
+                <div>
+                    <p class="destaque-texto">
+                        O presente projeto procura aliar a aprendizagem da linguagem de programação em blocos de cores, <strong>Scratch</strong>, com a disciplina de <strong>Matemática</strong> do 2.º ciclo do Ensino Básico português e a colaboração de professores da área para a promoção do <strong>Pensamento Computacional</strong> dos alunos.
+                    </p>
+                    <a class="ligacao-seta" href="sobre.html">Ler mais sobre o projeto <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
                 </div>
             </div>
         </section>
@@ -153,7 +183,7 @@
     <footer class="rodape">
         <div class="rodape-interior">
             <div class="rodape-marca">
-                <img src="logo1.png" width="160" height="70" alt="Scraπ">
+                <img src="logo-branco.png" width="488" height="210" alt="Scraπ">
                 <p>Scratch e Matemática no 2.º ciclo do Ensino Básico: uma comunidade de aprendizagem online de professores.</p>
                 <p class="rodape-fct">Projeto financiado pela Fundação para a Ciência e a Tecnologia.</p>
             </div>
@@ -191,6 +221,6 @@
 
     <button type="button" class="voltar-topo" aria-label="Voltar ao topo"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 
-    <script src="script.js?v=7"></script>
+    <script src="script.js?v=8"></script>
 </body>
 </html>
